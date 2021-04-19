@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Pseudo Classes</title>
+
+    <style>
+        .anchor a:link{
+            color: red;
+        }
+
+        .anchor a:visited{
+            color: greenyellow;
+        }
+
+        .anchor a:hover{
+            color: blue;
+        }
+
+        .anchor a:active{
+            color: grey;
+        }
+
+        .div1{
+            background-color: #fff;
+            border: 3px solid #73AD21;
+            width: 60%;
+            height: 300px;
+            margin: auto;
+            text-align: center;
+            line-height: 300px;
+        }
+        .div1:hover{
+            background-color: #73AD21;
+        }
+
+        #tooltip{
+            display: none;
+            background-color: #73AD21;
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+        }
+
+        .div2:hover #tooltip{
+            display: block;
+        }
+
+        .div3 p:first-child{
+            color: #73AD21;
+            font-weight: bold;
+        }
+
+        .div4:first-child{
+            color: red;
+        }
+
+        .div4:first-of-type{
+            background-color: yellow;
+        }
+
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="anchor">
+                <a href="#">This is a link</a>
+            </div>
+
+            <div class="div1">
+                Check
+            </div>
+
+            <div class="div2">
+                Main content
+                <p id="tooltip">Tooltip of main content</p>
+            </div>
+
+            <div class="div3">
+                <p>First child</p>
+                <p>Second child</p>
+            </div>
+
+            <div class="div4">
+                <h1>Child</h1>   <!-- .parent > :first-of-type -->
+                <div>Child</div> <!-- .parent > :first-of-type -->
+                <div>Child</div>
+                <div>Child</div>
+            </div>
+
+        </div>
+    </body>
+</html>

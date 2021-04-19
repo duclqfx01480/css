@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Combinators</title>
+
+        <style>
+            #div1 p{
+                border: 2px solid #73AD21;
+                padding: 5px;
+            }
+
+            #div2>p{
+                border: 2px solid #73AD21;
+                padding: 5px;
+            }
+
+            #div3 + p{
+                border: 3px solid #73AD21;
+            }
+
+            #div4 ~ p{
+                border: 3px solid #73AD21;
+                background-color: lightyellow;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Descendant selector</h2>
+
+            <div id="div1">
+                <p>Paragraph 1 in the div</p>
+                <p>Paragraph 2 in the div</p>
+                <section><p>Paragraph 3 in the div</p></section>
+            </div>
+
+            <p>Paragraph 4. Not in the div</p>
+            <p>Paragraph 5. Not in the div</p>
+
+            <h2>Child Selector (>)</h2>
+            <div id="div2">
+                <p>Paragraph 1 in the div</p>
+                <p>Paragraph 2 in the div</p>
+                <section><p>-- Paragraph 3 in the div</p></section>
+                <p>Paragraph 4 in the div</p>
+            </div>
+
+            <p>Paragraph 5. Not in the div</p>
+            <p>Paragraph 6. Not in the div</p>
+
+            <h2>Adjacent Sibling Selector (+)</h2>
+            <div id="div3">
+                <p>Paragraph 1 in the div</p>
+                <p>Paragraph 2 in the div</p>
+                <section><p>Paragraph 3 in the div</p></section>
+            </div>
+            <p>Paragraph 4. Right after the div</p>
+            <p>Paragraph 5. After the div</p>
+
+            <h2>General Sibling Selector</h2>
+            <p>Paragraph 1</p>
+            <div id="div4">
+                <p>Paragraph 2</p>
+            </div>
+
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+
+        </div> 
+        <!-- end container -->
+
+    </body>
+</html>

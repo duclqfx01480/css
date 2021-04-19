@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Position properties</title>
+
+        <style>
+            #static{
+                position: static;
+                border: 3px solid #73AD21;
+                padding: 20px;
+                margin-bottom: 50px;
+                font-size: 24px;
+            }
+
+            #relative{
+                position: relative;
+                left: 30px;
+                border: 3px solid #73AD21;
+                padding: 20px;
+                font-size: 24px;
+            }
+
+            #fixed{
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 300px;
+                border: 3px solid #73AD21;
+                padding: 20px;
+                background: #73AD21;
+                color: white;
+                z-index: 10;
+            }
+
+            #relativeDiv{
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid #73AD21;
+            }
+
+            #absoluteDiv{
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                width: 200px;
+                height: 100px;
+                border: 3px solid #73AD21;
+                background-color: lightyellow;
+            }
+
+            #sticky{
+                position: sticky;
+                top: 20px;
+                padding: 10px;
+                border: 2px solid #73AD21;
+                background-color: lightyellow;             
+            }
+
+            .imgcontainer{
+                position: relative;
+                width: 1000px;
+                border: 3px solid #ddd;
+            }
+
+            .topleft{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                padding: 5px;
+            }
+
+            .topright{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: #ddd;
+                padding: 5px;
+            }
+
+            .bottomleft{
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+                background-color: #ddd;
+                padding: 5px;
+            }
+
+            .bottomright{
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                background: #ddd;
+                padding: 5px;
+            }
+
+            .center{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                background: #ddd;
+                padding: 5px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="static">
+                This div element has position: static
+            </div>
+
+            <div id="relative">
+                This div element has position: relative
+            </div>
+
+            <div id="fixed">
+                This div element has position: fixed
+            </div>
+
+            <div class="content">
+                <h2>Very long content</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus maximus feugiat. Aliquam tempor massa eu aliquam elementum. Nulla sit amet sem ultrices, porta eros in, gravida lectus. Etiam tristique mauris placerat sem volutpat tincidunt. Ut luctus scelerisque enim a vestibulum. Sed feugiat nisl nec orci fringilla pellentesque. Nunc nec felis velit. Sed lectus est, tristique et magna quis, aliquam efficitur ipsum. Nullam pretium, risus nec luctus pellentesque, massa ipsum sollicitudin urna, mattis auctor leo lorem et elit. Nunc dapibus mattis odio in ullamcorper.
+                    Integer ac egestas lacus. Suspendisse molestie ultrices felis, at aliquam arcu malesuada ut. Nunc erat arcu, rhoncus a tortor sed, accumsan mattis ante. Phasellus et sapien leo. Nullam mollis et ante id viverra. Cras vitae odio et odio congue egestas vitae eu libero. Maecenas ornare vulputate arcu a varius.
+                    Nullam eget tristique neque. Sed nec nisl efficitur justo suscipit iaculis. Vestibulum semper mauris quis turpis pellentesque vehicula. Pellentesque eget commodo lectus. Praesent dictum elementum ex vitae egestas. Sed vestibulum lectus vehicula libero pharetra venenatis. Praesent eleifend, ligula et aliquam tincidunt, ipsum tortor imperdiet risus, a suscipit augue velit vel felis. Etiam ut ornare nisi. Vivamus at blandit nibh, sed gravida massa. Sed consequat iaculis laoreet.
+                    Sed eget arcu magna. Proin ullamcorper eros sit amet sollicitudin molestie. Morbi posuere, mauris vitae auctor luctus, sem mauris eleifend diam, a blandit massa metus in mauris. In massa ligula, luctus non imperdiet a, commodo sed ante. Vestibulum placerat, magna ac porta rutrum, ex mi consectetur dui, non dapibus risus dolor non sapien. Aliquam feugiat nisi vitae condimentum convallis. Cras facilisis sodales massa id elementum. Praesent et lacinia dui. Integer pretium tortor eget varius pretium. Aliquam erat volutpat.
+                    Donec semper enim nec massa dapibus pharetra. Mauris mattis pharetra lorem, vitae vulputate eros laoreet vel. Suspendisse sit amet dui sagittis, vehicula neque vitae, fermentum lectus. Nunc at malesuada felis. Praesent eu elit quis neque accumsan interdum. Vivamus semper quis massa laoreet vehicula. Mauris egestas posuere tincidunt. Nunc a rutrum ante, vel semper arcu. Proin varius pellentesque dui, tincidunt sollicitudin risus imperdiet eu. Proin mi ante, feugiat non mauris ac, rutrum tincidunt purus. Suspendisse pulvinar sed ligula vel fringilla. Pellentesque iaculis id lacus at posuere. Duis aliquet pretium pretium. Fusce bibendum mollis consequat. Suspendisse quis consectetur ante. Sed id arcu nec urna gravida placerat at vitae quam.
+                </p>
+
+                <div id="sticky">
+                    <p>This div element has position: sticky</p>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus maximus feugiat. Aliquam tempor massa eu aliquam elementum. Nulla sit amet sem ultrices, porta eros in, gravida lectus. Etiam tristique mauris placerat sem volutpat tincidunt. Ut luctus scelerisque enim a vestibulum. Sed feugiat nisl nec orci fringilla pellentesque. Nunc nec felis velit. Sed lectus est, tristique et magna quis, aliquam efficitur ipsum. Nullam pretium, risus nec luctus pellentesque, massa ipsum sollicitudin urna, mattis auctor leo lorem et elit. Nunc dapibus mattis odio in ullamcorper.
+                    Integer ac egestas lacus. Suspendisse molestie ultrices felis, at aliquam arcu malesuada ut. Nunc erat arcu, rhoncus a tortor sed, accumsan mattis ante. Phasellus et sapien leo. Nullam mollis et ante id viverra. Cras vitae odio et odio congue egestas vitae eu libero. Maecenas ornare vulputate arcu a varius.
+                    Nullam eget tristique neque. Sed nec nisl efficitur justo suscipit iaculis. Vestibulum semper mauris quis turpis pellentesque vehicula. Pellentesque eget commodo lectus. Praesent dictum elementum ex vitae egestas. Sed vestibulum lectus vehicula libero pharetra venenatis. Praesent eleifend, ligula et aliquam tincidunt, ipsum tortor imperdiet risus, a suscipit augue velit vel felis. Etiam ut ornare nisi. Vivamus at blandit nibh, sed gravida massa. Sed consequat iaculis laoreet.
+                    Sed eget arcu magna. Proin ullamcorper eros sit amet sollicitudin molestie. Morbi posuere, mauris vitae auctor luctus, sem mauris eleifend diam, a blandit massa metus in mauris. In massa ligula, luctus non imperdiet a, commodo sed ante. Vestibulum placerat, magna ac porta rutrum, ex mi consectetur dui, non dapibus risus dolor non sapien. Aliquam feugiat nisi vitae condimentum convallis. Cras facilisis sodales massa id elementum. Praesent et lacinia dui. Integer pretium tortor eget varius pretium. Aliquam erat volutpat.
+                    Donec semper enim nec massa dapibus pharetra. Mauris mattis pharetra lorem, vitae vulputate eros laoreet vel. Suspendisse sit amet dui sagittis, vehicula neque vitae, fermentum lectus. Nunc at malesuada felis. Praesent eu elit quis neque accumsan interdum. Vivamus semper quis massa laoreet vehicula. Mauris egestas posuere tincidunt. Nunc a rutrum ante, vel semper arcu. Proin varius pellentesque dui, tincidunt sollicitudin risus imperdiet eu. Proin mi ante, feugiat non mauris ac, rutrum tincidunt purus. Suspendisse pulvinar sed ligula vel fringilla. Pellentesque iaculis id lacus at posuere. Duis aliquet pretium pretium. Fusce bibendum mollis consequat. Suspendisse quis consectetur ante. Sed id arcu nec urna gravida placerat at vitae quam.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus maximus feugiat. Aliquam tempor massa eu aliquam elementum. Nulla sit amet sem ultrices, porta eros in, gravida lectus. Etiam tristique mauris placerat sem volutpat tincidunt. Ut luctus scelerisque enim a vestibulum. Sed feugiat nisl nec orci fringilla pellentesque. Nunc nec felis velit. Sed lectus est, tristique et magna quis, aliquam efficitur ipsum. Nullam pretium, risus nec luctus pellentesque, massa ipsum sollicitudin urna, mattis auctor leo lorem et elit. Nunc dapibus mattis odio in ullamcorper.
+                    Integer ac egestas lacus. Suspendisse molestie ultrices felis, at aliquam arcu malesuada ut. Nunc erat arcu, rhoncus a tortor sed, accumsan mattis ante. Phasellus et sapien leo. Nullam mollis et ante id viverra. Cras vitae odio et odio congue egestas vitae eu libero. Maecenas ornare vulputate arcu a varius.
+                    Nullam eget tristique neque. Sed nec nisl efficitur justo suscipit iaculis. Vestibulum semper mauris quis turpis pellentesque vehicula. Pellentesque eget commodo lectus. Praesent dictum elementum ex vitae egestas. Sed vestibulum lectus vehicula libero pharetra venenatis. Praesent eleifend, ligula et aliquam tincidunt, ipsum tortor imperdiet risus, a suscipit augue velit vel felis. Etiam ut ornare nisi. Vivamus at blandit nibh, sed gravida massa. Sed consequat iaculis laoreet.
+                    Sed eget arcu magna. Proin ullamcorper eros sit amet sollicitudin molestie. Morbi posuere, mauris vitae auctor luctus, sem mauris eleifend diam, a blandit massa metus in mauris. In massa ligula, luctus non imperdiet a, commodo sed ante. Vestibulum placerat, magna ac porta rutrum, ex mi consectetur dui, non dapibus risus dolor non sapien. Aliquam feugiat nisi vitae condimentum convallis. Cras facilisis sodales massa id elementum. Praesent et lacinia dui. Integer pretium tortor eget varius pretium. Aliquam erat volutpat.
+                    Donec semper enim nec massa dapibus pharetra. Mauris mattis pharetra lorem, vitae vulputate eros laoreet vel. Suspendisse sit amet dui sagittis, vehicula neque vitae, fermentum lectus. Nunc at malesuada felis. Praesent eu elit quis neque accumsan interdum. Vivamus semper quis massa laoreet vehicula. Mauris egestas posuere tincidunt. Nunc a rutrum ante, vel semper arcu. Proin varius pellentesque dui, tincidunt sollicitudin risus imperdiet eu. Proin mi ante, feugiat non mauris ac, rutrum tincidunt purus. Suspendisse pulvinar sed ligula vel fringilla. Pellentesque iaculis id lacus at posuere. Duis aliquet pretium pretium. Fusce bibendum mollis consequat. Suspendisse quis consectetur ante. Sed id arcu nec urna gravida placerat at vitae quam.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus maximus feugiat. Aliquam tempor massa eu aliquam elementum. Nulla sit amet sem ultrices, porta eros in, gravida lectus. Etiam tristique mauris placerat sem volutpat tincidunt. Ut luctus scelerisque enim a vestibulum. Sed feugiat nisl nec orci fringilla pellentesque. Nunc nec felis velit. Sed lectus est, tristique et magna quis, aliquam efficitur ipsum. Nullam pretium, risus nec luctus pellentesque, massa ipsum sollicitudin urna, mattis auctor leo lorem et elit. Nunc dapibus mattis odio in ullamcorper.
+                    Integer ac egestas lacus. Suspendisse molestie ultrices felis, at aliquam arcu malesuada ut. Nunc erat arcu, rhoncus a tortor sed, accumsan mattis ante. Phasellus et sapien leo. Nullam mollis et ante id viverra. Cras vitae odio et odio congue egestas vitae eu libero. Maecenas ornare vulputate arcu a varius.
+                    Nullam eget tristique neque. Sed nec nisl efficitur justo suscipit iaculis. Vestibulum semper mauris quis turpis pellentesque vehicula. Pellentesque eget commodo lectus. Praesent dictum elementum ex vitae egestas. Sed vestibulum lectus vehicula libero pharetra venenatis. Praesent eleifend, ligula et aliquam tincidunt, ipsum tortor imperdiet risus, a suscipit augue velit vel felis. Etiam ut ornare nisi. Vivamus at blandit nibh, sed gravida massa. Sed consequat iaculis laoreet.
+                    Sed eget arcu magna. Proin ullamcorper eros sit amet sollicitudin molestie. Morbi posuere, mauris vitae auctor luctus, sem mauris eleifend diam, a blandit massa metus in mauris. In massa ligula, luctus non imperdiet a, commodo sed ante. Vestibulum placerat, magna ac porta rutrum, ex mi consectetur dui, non dapibus risus dolor non sapien. Aliquam feugiat nisi vitae condimentum convallis. Cras facilisis sodales massa id elementum. Praesent et lacinia dui. Integer pretium tortor eget varius pretium. Aliquam erat volutpat.
+                    Donec semper enim nec massa dapibus pharetra. Mauris mattis pharetra lorem, vitae vulputate eros laoreet vel. Suspendisse sit amet dui sagittis, vehicula neque vitae, fermentum lectus. Nunc at malesuada felis. Praesent eu elit quis neque accumsan interdum. Vivamus semper quis massa laoreet vehicula. Mauris egestas posuere tincidunt. Nunc a rutrum ante, vel semper arcu. Proin varius pellentesque dui, tincidunt sollicitudin risus imperdiet eu. Proin mi ante, feugiat non mauris ac, rutrum tincidunt purus. Suspendisse pulvinar sed ligula vel fringilla. Pellentesque iaculis id lacus at posuere. Duis aliquet pretium pretium. Fusce bibendum mollis consequat. Suspendisse quis consectetur ante. Sed id arcu nec urna gravida placerat at vitae quam.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus maximus feugiat. Aliquam tempor massa eu aliquam elementum. Nulla sit amet sem ultrices, porta eros in, gravida lectus. Etiam tristique mauris placerat sem volutpat tincidunt. Ut luctus scelerisque enim a vestibulum. Sed feugiat nisl nec orci fringilla pellentesque. Nunc nec felis velit. Sed lectus est, tristique et magna quis, aliquam efficitur ipsum. Nullam pretium, risus nec luctus pellentesque, massa ipsum sollicitudin urna, mattis auctor leo lorem et elit. Nunc dapibus mattis odio in ullamcorper.
+                    Integer ac egestas lacus. Suspendisse molestie ultrices felis, at aliquam arcu malesuada ut. Nunc erat arcu, rhoncus a tortor sed, accumsan mattis ante. Phasellus et sapien leo. Nullam mollis et ante id viverra. Cras vitae odio et odio congue egestas vitae eu libero. Maecenas ornare vulputate arcu a varius.
+                    Nullam eget tristique neque. Sed nec nisl efficitur justo suscipit iaculis. Vestibulum semper mauris quis turpis pellentesque vehicula. Pellentesque eget commodo lectus. Praesent dictum elementum ex vitae egestas. Sed vestibulum lectus vehicula libero pharetra venenatis. Praesent eleifend, ligula et aliquam tincidunt, ipsum tortor imperdiet risus, a suscipit augue velit vel felis. Etiam ut ornare nisi. Vivamus at blandit nibh, sed gravida massa. Sed consequat iaculis laoreet.
+                    Sed eget arcu magna. Proin ullamcorper eros sit amet sollicitudin molestie. Morbi posuere, mauris vitae auctor luctus, sem mauris eleifend diam, a blandit massa metus in mauris. In massa ligula, luctus non imperdiet a, commodo sed ante. Vestibulum placerat, magna ac porta rutrum, ex mi consectetur dui, non dapibus risus dolor non sapien. Aliquam feugiat nisi vitae condimentum convallis. Cras facilisis sodales massa id elementum. Praesent et lacinia dui. Integer pretium tortor eget varius pretium. Aliquam erat volutpat.
+                    Donec semper enim nec massa dapibus pharetra. Mauris mattis pharetra lorem, vitae vulputate eros laoreet vel. Suspendisse sit amet dui sagittis, vehicula neque vitae, fermentum lectus. Nunc at malesuada felis. Praesent eu elit quis neque accumsan interdum. Vivamus semper quis massa laoreet vehicula. Mauris egestas posuere tincidunt. Nunc a rutrum ante, vel semper arcu. Proin varius pellentesque dui, tincidunt sollicitudin risus imperdiet eu. Proin mi ante, feugiat non mauris ac, rutrum tincidunt purus. Suspendisse pulvinar sed ligula vel fringilla. Pellentesque iaculis id lacus at posuere. Duis aliquet pretium pretium. Fusce bibendum mollis consequat. Suspendisse quis consectetur ante. Sed id arcu nec urna gravida placerat at vitae quam.
+                </p>
+            </div> <!-- end content -->
+
+            <div id="relativeDiv">
+                <p>This div element has position: relative</p>
+                <div id="absoluteDiv">
+                    <p>This div element has postion: absolute</p>
+                </div>
+            </div>
+
+            <div class="imgcontainer">
+                <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300">
+                <div class="topleft">Top Left</div>
+                <div class="topright">Top Right</div>
+                <div class="bottomleft">Bottom Left</div>
+                <div class="bottomright">Bottom Right</div>
+                <div class="center">Center</div>
+            </div>
+
+        </div> <!-- end container -->
+    </body>
+</html>

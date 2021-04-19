@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Font</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+        <style>
+            body{
+                font-size: 100%;
+            }
+            .p1{
+                font-family: "Times New Roman", Georgia, serif;
+            }
+            
+            .p2{
+                font-family: Arial, Verdana, Helvetica, sans-serif;
+            }
+
+            .p3{
+                font-family: "Lucida Console";
+            }
+
+            h1{
+                font-size: 40px;
+            }
+
+            h2{
+                font-size: 30px;
+            }
+
+            h3{
+                font-size: 14px;
+            }
+
+            #em1{
+                font-size: 2.5em;
+            }
+
+            #em2{
+                font-size: 1.875em;
+            }
+            
+            #em3{
+                font-size: 0.875em;
+            }
+
+            #googlefontsofia{
+                font-family: "Sofia", sans-serif;
+                font-size: 3vw;
+            }
+
+            #googlefontaudiowide{
+                font-family: "Audiowide", san-serif;
+                font-size: 3vw;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="div1">
+                <h1>CSS Font Family</h1>
+                <p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
+                <p class="p2">This is a paragraph, shown in the Arial font.</p>
+                <p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+            </div>
+
+            <div id="div2">
+                <h1>Text with font-size of 40px</h1>
+                <h2>Text with font-size of 30px</h2>
+                <h3>Text with font-size of 14px</h3>
+            </div>
+
+            <div id="div3">
+                <h1 id="em1">Text with font-size of 2.5em</h1>
+                <h2 id="em2">Text with font-size of 1.875em</h2>
+                <h3 id="em3">Text with font-size of 0.875em</h3>
+            </div>
+
+            <div id="div4">
+                <h1 style="font-size: 10vw;">Responsive Font Size with vw (viewport width)</h1>
+                <p style="font-size: 5vw;">Resize the browser window to see how the text size scales.</p>
+            </div>
+
+            <div id="div5">
+                <p id="googlefontsofia">This text is formatted with Google Sofia font.</p>
+                <p id="googlefontaudiowide">This text is formatted with Google Audiowide font.</p>
+            </div>
+
+        </div> <!-- end container -->
+        
+
+    </body>
+</html>

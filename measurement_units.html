@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Measurement Units</title>
+
+        <style>
+            .absolute h1{font-size: 1.5cm;}
+            .absolute h2{font-size: 1cm;}
+            .absolute p{
+                font-size: 0.5cm;
+                line-height: 1cm;
+            }
+
+            .relative p{
+                line-height: 2em;
+                border: 1px solid blue;
+            }
+
+            .relative div{
+                font-size: 30px;
+            }
+
+            .relative span{
+                font-size: 0.5em;
+            }
+
+            #rem{
+                font-size: 2rem;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Absolute units</h1>
+            <div class="absolute">
+                <h1>font-size: 1.5cm</h1>
+                <h2>font-size: 1cm</h2>
+                <p>font-size: 0.5cm</p>
+                <p>font-size: 0.5cm</p>
+            </div>
+
+            <br>
+            <h1>Relative units</h1>
+            <div class="relative">
+                <p>Line height: 2em x 16px = 32px</p>
+                <div>
+                    font-size: 30px
+                    <span>font-size 0.5em (0.5em x 30px = 15px)</span>
+                </div>
+                <p id="rem">font-size: 2rem</p>
+            </div>
+            
+        </div>
+    </body>
+</html>

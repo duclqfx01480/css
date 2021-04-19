@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Horizontal & Vertical Align</title>
+
+        <style>
+            .center1{
+                width: 60%;
+                margin: auto;
+                padding: 10px;
+                border: 3px solid #73AD21;
+                text-align: center;
+            }
+
+            #img{
+                display: block;
+                margin: 0 auto;
+            }
+
+            .right1{
+                border: 3px solid #73AD21;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                width: 300px;
+                padding: 10px;
+            }
+
+            .right2{
+                float: right;
+                bottom: 10px;
+                width: 300px;
+                border: 3px solid #73AD21;
+                padding: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Center Align Elements</h2>
+            <div class="center1">
+                <p>Content</p>
+            </div>
+
+            <br>
+            <div>
+                <img id="img" src="https://www.w3schools.com/css/paris.jpg" alt="Paris">
+            </div>
+
+            <div class="right1">
+                <h3>Right align using position: absolute</h3>
+                <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+            </div>
+
+            <div class="right2">
+                <h3>Right align using float: right</h3>
+                <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+            </div>
+
+        </div> <!-- end container -->
+    </body>
+</html>

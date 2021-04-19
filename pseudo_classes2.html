@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pseudo Class</title>
+
+        <style>
+            .parent :first-child{
+                color: red;
+            }
+
+            .parent :first-of-type{
+                background-color: yellow;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="parent">
+            <h1>Child</h1>   <!-- .parent > :first-of-type -->
+            <div>Child</div> <!-- .parent > :first-of-type -->
+            <div>Child</div>
+            <div>Child</div>
+        </div>
+    </body>
+</html>

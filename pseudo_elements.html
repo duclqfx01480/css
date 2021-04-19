@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pseudo Elements</title>
+
+        <style>
+            #div1 p::first-line{
+                color: #ff0000;
+                font-variant: small-caps;
+            }
+
+            #div1 p::first-letter{
+                color: #0000ff;
+                font-size: xx-large;
+            }
+
+            #div1 h1::before{
+                content: url(https://www.w3schools.com/css/smiley.gif);
+            }
+
+            #div1 ul ::marker{
+                color: red;
+                font-size: 23px;
+            }
+
+            #div1 ::selection{
+                background-color: lightyellow;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="div1">
+            <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+            <h1>Content</h1>
+
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </div>
+        
+    </body>
+</html>

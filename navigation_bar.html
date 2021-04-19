@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Navigation Bar - Vertical</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .verticalNav{
+                width: 200px;
+                background-color: #f1f1f1;
+                list-style-type: none;
+            }
+
+            .verticalNav li{
+                border: none;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .verticalNav li a{
+                text-decoration: none;
+                display: block;
+                padding: 8px 16px;
+                color: #000;
+            }
+
+            .verticalNav li a:hover:not(.active){
+                background-color: #555;
+                color: #fff;
+            }
+
+            .active{
+                background-color: #73AD21;
+            }
+
+            .horizontalNav{
+                background-color: #f1f1f1;
+                list-style-type: none;
+            }
+
+            .horizontalNav li{
+                display: inline-block;
+            }
+
+            .horizontalNav li a{
+                display: block;
+                padding: 8px 16px;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .horizontalNav li a:hover:not(.active){
+                background-color: #555;
+                color: white;
+            }
+
+            .horizontalNav2{
+                background-color: #333;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .horizontalNav2 li{
+                float: left;
+            }
+
+            .horizontalNav2 li a{
+                text-decoration: none;
+                display: block;
+                padding: 14px 16px;
+                color: #fff;
+            }
+
+            .horizontalNav2 .alignRight{
+                float: right;
+            }
+
+            .horizontalNav2 a:hover:not(.active){
+                background-color: #111;
+            }
+
+            .alignRight{
+                float: right;
+            }
+
+            .fixedTopNavBar{
+                list-style-type: none;
+                width: 100%;
+                background-color: #333;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+            }
+
+            .fixedTopNavBar li{
+                float: left;
+            }
+
+            .fixedTopNavBar li a{
+                display: block;
+                padding: 14px 16px;
+                color: white;
+                text-decoration: none;
+            }
+
+            .fixedTopNavBar li a:hover:not(.active){
+                background-color: #111;
+            }
+
+            .content{
+                margin-top: 100px;;
+            }
+
+            .fixedBottomNavBar{
+                background-color: #333;
+                list-style-type: none;
+                overflow: hidden;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+
+            .fixedBottomNavBar li{
+                float: left;
+            }
+
+            .fixedBottomNavBar li a{
+                text-decoration: none;
+                color: white;
+                display: block;
+                padding: 14px 16px;
+            }
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <ul class="verticalNav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            
+            <br>
+    
+            <ul class="horizontalNav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+    
+            <br>
+            <ul class="horizontalNav2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="alignRight"><a href="#" class="active">About</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Fixed Top nav bar</h2>
+            <ul class="fixedTopNavBar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <h2>Scroll this page to see the effect</h2>
+            <h2></h2>The navigation bar will stay at the top of the page while scrolling</h2>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+            <p>
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+                Some text some text some text some text..
+            </p>
+        </div>
+
+        <div>
+            <h2>Fixed Bottom nav bar</h2>
+            <ul class="fixedBottomNavBar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="active">About</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>

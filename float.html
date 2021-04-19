@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Float</title>
+
+        <style>
+            #div1{
+                width: 600px;
+                margin: 0 auto;
+            }
+            #pineappleImg1{
+                float: right;
+            }
+
+            #div2{
+                width: 600px;
+                margin: 0 auto;
+            }
+
+            #pineappleImg2{
+                float: left;
+            }
+
+            #div3{
+                width: 600px;
+                margin: 0 auto;
+            }
+
+            #pineappleImg3{
+                float: none;
+                vertical-align: middle;
+            }
+
+            #row{
+                width: 600px;
+                margin: 0 auto;
+            }
+
+            #row p{
+                color: white;
+                font-size: 24px;
+            }
+
+            .col{
+                float: left;
+                padding: 15px;
+            }
+
+            #col1{
+                background-color: red;
+            }
+
+            #col2{
+                background-color: green;
+            }
+
+            #col3{
+                background-color: blue;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="div1">
+                <h2>Float right</h2>
+                <p><img id="pineappleImg1" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple">In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image. PineappleLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+            </div>
+
+            <div id="div2">
+                <h2>Float left</h2>
+                <p><img id="pineappleImg2" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple">In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image. PineappleLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+            </div>
+
+            <div id="div3">
+                <h2>No float</h2>
+                <p><img id="pineappleImg3" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple">In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image. PineappleLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+            </div>
+
+            <div id="row">
+                <h2>Float next to each other</h2>
+                <div class="col" id="col1"><p>Col 1</p></div>
+                <div class="col" id="col2"><p>Col 2</p></div>
+                <div class="col" id="col3"><p>Col 3</p></div>
+            </div>
+
+        </div>
+    </body>
+</html>

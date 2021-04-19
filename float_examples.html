@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Float example</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            .content::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            .col{
+                float: left;
+                width: 33.33%;
+                padding: 50px;
+            }
+
+            #col1{
+                background-color: #bbb;
+            }
+
+            #col2{
+                background-color: #ccc;
+            }
+
+            #col3{
+                background-color: #ddd;
+            }
+
+            #footer{
+                border: 2px solid red;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="col" id="col1">
+                    <p>Content</p>
+                </div>
+    
+                <div class="col" id="col2">
+                    <p>Content</p>
+                </div>
+    
+                <div class="col" id="col3">
+                    <p>Content</p>
+                </div>
+            </div>
+
+            <div id="footer">
+                <p>Footer</p>
+            </div>
+
+        </div> <!-- end container -->
+    </body>
+</html>

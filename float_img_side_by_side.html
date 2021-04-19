@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Float Image Side-by-side</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            .showImg::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .img-container{
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+            }
+
+            
+
+            .header, .footer{
+                border: 3px solid #ddd;
+                background-color: #eee;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                font-size: 24px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">Header</div>
+            <div class="showImg">
+                <div class="img-container">
+                    <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="pic1">
+                </div>
+
+                <div class="img-container">
+                    <img src="https://www.w3schools.com/css/img_forest.jpg" alt="pic2">
+                </div>
+
+                <div class="img-container">
+                    <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="pic3">
+                </div>
+            </div> <!-- end showImg-->
+
+            <div class="footer">
+                Footer
+            </div>
+        </div>
+
+    </body>
+</html>

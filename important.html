@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Important keyword</title>
+        
+        <style>
+            #div1 p{
+                background-color: red !important;
+            }
+            #div1 .myclass{
+                background-color: grey;
+            }
+            #div1 #myid{
+                background-color: blue;
+            }
+
+            .button{
+                background-color: #73AD21 !important;
+                color: white !important;
+                padding: 5px !important;
+                border: 1px solid black !important;
+            }
+
+            #myDiv a{
+                color: red;
+                background-color: yellow;
+            }
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="div1">
+                <p>Paragraph</p>
+                <p class="myclass">Some text</p>
+                <p id="myid">Some text</p>
+            </div>
+
+            <div>
+                <p>Standard button: <a href="#" class="button">Button</a></p>
+
+                <div id="myDiv">
+                    <p>A link inside the div <a href="#">Link</a></p>
+                    <p>Another button <a href="#" class="button">Button</a></p>
+                </div>
+            </div>
+
+        </div> <!-- end container -->
+    </body>
+</html>

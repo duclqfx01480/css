@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Image Gallery</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .row{
+                width: 100%;
+            }
+
+            .gallery{
+                border: 1px solid #ccc;
+                float: left;
+                width: 25%;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+
+            .gallery:hover{
+                border: 1px solid #777;
+            }
+
+            .gallery:hover img{
+                opacity: 0.6;
+            }
+
+            .gallery img{
+                width: 100%;
+                height: auto;
+            }
+
+            .gallery .desc{
+                padding: 15px;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="gallery">
+                    <a href="https://www.w3schools.com/css/img_5terre.jpg" target="_blank"><img src="https://www.w3schools.com/css/img_5terre.jpg" alt="beach" width="600" height="400"></a>
+                    <p class="desc">Description</p>
+                </div>
+
+                <div class="gallery">
+                    <a href="https://www.w3schools.com/css/img_forest.jpg" target="_blank"><img src="https://www.w3schools.com/css/img_forest.jpg" alt="forest" width="600" height="400"></a>
+                    <p class="desc">Description</p>
+                </div>
+
+                <div class="gallery">
+                    <a href="https://www.w3schools.com/css/img_lights.jpg" target="_blank"><img src="https://www.w3schools.com/css/img_lights.jpg" alt="north" width="600" height="400"></a>
+                    <p class="desc">Description</p>
+                </div>
+
+                <div class="gallery">
+                    <a href="https://www.w3schools.com/css/img_mountains.jpg" target="_blank"><img src="https://www.w3schools.com/css/img_mountains.jpg" alt="lake" width="600" height="400"></a>
+                    <p class="desc">Description</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
