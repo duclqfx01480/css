@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Transition</title>
+
+        <style>
+            #div1{
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                background-color: #73AD21;
+                transition: width 2s, height 2s, line-height 2s, transform 2s;
+                font-size: 40px;
+                color: white;
+                text-align: center;
+                transition-timing-function: ease-out;
+                transition-delay: 0.1s;
+            }
+
+            #div1:hover{
+                width: 300px;
+                height: 300px;
+                line-height: 300px;
+                transform: translate(50px, 50px);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="div1">CSS</div>
+
+        </div> <!-- end container -->
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Border Image</title>
+
+        <style>
+            #borderimg1{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(https://www.w3schools.com/css/border.png) 30 round;
+                /* border-image: url(https://www.w3schools.com/css/border.png) 30 stretch; */
+            }
+
+            #borderimg2{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(https://www.w3schools.com/css/border.png) 50 round;
+            }
+
+            #borderimg3{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(https://www.w3schools.com/css/border.png) 20% round;
+
+            }
+
+            #borderimg4{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(https://www.w3schools.com/css/border.png) 30% round;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <p id="borderimg1">border-image: url(border.png) 30 round;</p>
+            <p id="borderimg2">border-image: url(border.png) 50 round;</p>
+            <p id="borderimg3">border-image: url(border.png) 20% round;</p>
+            <p id="borderimg4">border-image: url(border.png) 30% round;</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Multiple Backgrounds</title>
+
+        <style>
+            #div1{
+                background-image: url(https://www.w3schools.com/css/img_flwr.gif), url(https://www.w3schools.com/css/paper.gif);
+                background-position: right bottom, left top;
+                background-repeat: no-repeat, repeat;
+                padding: 15px;
+            }
+
+            #div2{
+                background: url(https://www.w3schools.com/css/img_flwr.gif) no-repeat bottom right, url(https://www.w3schools.com/css/paper.gif) repeat top left;
+                padding: 15px;
+            }
+
+            #div3{
+                border: 1px solid black;
+                padding: 15px;
+                background: url(https://www.w3schools.com/css/img_flwr.gif);
+                background-size: 100px 80px;
+                background-position: top left;
+                background-repeat: no-repeat;
+            }
+
+            #div4{
+                border: 1px solid black;
+                padding: 15px;
+                background: url(https://www.w3schools.com/css/img_flwr.gif);
+                background-repeat: no-repeat;
+            }
+
+            #div5{
+                border: 1px solid black;
+                height: 120px;
+                width: 150px;
+                background: url(https://www.w3schools.com/css/img_flwr.gif);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            #div6{
+                border: 1px solid black;
+                height: 120px;
+                width: 150px;
+                background: url(https://www.w3schools.com/css/img_flwr.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #div7{
+                border: 1px solid black;
+                height: 120px;
+                width: 150px;
+                background: url(https://www.w3schools.com/css/img_flwr.gif);
+                background-repeat: no-repeat;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="div1">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </div>
+            
+            <br>
+
+            <div id="div2">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <br>
+
+            <div id="div3">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <br>
+
+            <div id="div4">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <br>
+
+            <div id="div5">
+                <h3>background-size: contain</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+
+            <br>
+
+            <div id="div6">
+                <h3>background-size: cover</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+
+            <br>
+
+            <div id="div7">
+                <h3>no background-size</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+
+        </div> <!-- end container -->
+
+    </body>
+</html>

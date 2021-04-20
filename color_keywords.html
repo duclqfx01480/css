@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Color Keywords</title>
+
+        <style>
+            body{
+                background: url(https://www.w3schools.com/css/paper.gif);
+            }
+
+            #div1{
+                background-color: #73AD21;
+                border: 2px solid black;
+                padding: 15px;
+            }
+
+            #div2{
+                background-color: transparent;
+                border: 2px solid black;
+                padding: 15px;
+            }
+
+            #div3{
+                color: #73AD21;
+                border: 5px solid currentColor;
+                padding: 15px;
+            }
+
+            #div4{
+                color: purple;
+            }
+
+            #div4 div{
+                background-color: currentColor;
+            }
+
+            #div4 div p{
+                color: white;
+                padding: 15px;
+            }
+
+            #div5{
+                border: 2px solid red;
+            }
+
+            #div5 span{
+                border: inherit;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="div1">
+                <p>This div has a green background</p>
+            </div>
+
+            <br>
+
+            <div id="div2">
+                <p>This div has a transparent background.</p>
+            </div>
+
+            <br>
+
+            <div id="div3">
+                <p>Current color</p>
+            </div>
+
+            <div id="div4">
+                <div>
+                    <p>Current color</p>
+                </div>
+            </div>
+
+            <div id="div5">
+                Here, the <span>span element's</span> border settings will be inherited <br>from the parent element.
+            </div>
+
+        </div> <!-- end container -->
+
+    </body>
+</html>

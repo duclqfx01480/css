@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Text Effect</title>
+
+        <style>
+            .p1{
+                white-space: nowrap;
+                width: 200px;
+                border: 1px solid black;
+                padding: 10px;
+                overflow: hidden;
+                text-overflow: clip;
+            }
+
+            .p1:hover{
+                overflow: visible;
+            }
+
+            .p2{
+                white-space: nowrap;
+                width: 200px;
+                border: 1px solid black;
+                padding: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .p2:hover{
+                overflow: visible;
+            }
+
+            .wrap{
+                width: 11em;
+                border: 1px solid black;
+                word-wrap: break-word;
+            }
+
+            .break1{
+                width: 140px;
+                border: 1px solid black;
+                word-break: keep-all;
+            }
+
+            .break2{
+                width: 140px;
+                border: 1px solid black;
+                word-break: break-all;
+            }
+
+            .horizontal{
+                writing-mode: horizontal-tb;
+            }
+
+            .vertical{
+                writing-mode: vertical-rl;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div>
+                <h2>text-overflow: clip</h2>
+                <p class="p1">This is some long text that will not fit in the box</p>
+                <h2>text-overflow: ellipsis</h2>
+                <p class="p2">This is some long text that will not fit in the box</p>
+
+                <p class="wrap">This paragraph contains a very long word: this is a very very very very very very long word. The long word will break and wrap to the next line.</p>
+                <p class="break1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+                <p class="break2">This paragraph contains some text. The lines will break at any character.</p>
+
+                <p class="horizontal">Some text with default writing-mode.</p>
+                <p>Some text with a span element with a <span class="vertical">vertical-rl</span> writing-mode.</p>
+                <p class="vertical">Some text with writing-mode: vertical-rl.</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Box Shadow</title>
+
+        <style>
+            #box1{
+                width: 400px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                box-shadow: 10px 20px 10px black;
+                background: #73AD21;
+            }
+
+            .textcard{
+                width: 250px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+            }
+
+            .textcardheader{
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+                font-size: 40px;
+
+            }
+
+            .textcardContainer{
+                padding: 10px;
+            }
+
+            .imagecard{
+                width: 250px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                text-align: center;
+            }
+
+            .imagecard img{
+                width: 100%;
+            }
+
+            .imagecardContainer{
+                padding: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="box1">
+                <p>This is a green div element with a black box-shadow</p>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="textcard">
+                <div class="textcardheader">
+                    <h1>1</h1>
+                </div>
+                <div class="textcardContainer">
+                    <p>January 1, 2021</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="imagecard">
+                <div class="imagecardheader">
+                    <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="hardanger, norway">
+                </div>
+                <div class="imagecardContainer">
+                    <p>Hardanger, Norway</p>
+                </div>
+            </div>
+
+        </div> <!-- end container -->
+    </body>
+</html>
