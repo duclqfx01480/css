@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Variables in Media Queries</title>
+
+        <style>
+            :root{
+                --blue: #1e90ff;
+                --white: #fff;
+            }
+
+            .container{
+                --font-size: 25px;
+            }
+
+            body{
+                background-color: var(--blue);
+            }
+
+            h2{
+                border-bottom: 2px solid var(--blue);
+            }
+
+            .container{
+                color: var(--blue);
+                background-color: var(--white);
+                padding: 15px;
+                font-size: var(--font-size);
+            }
+
+            @media screen and (min-width: 800px){
+                .container{
+                    --font-size: 50px;
+                }
+
+                :root{
+                    --blue: lightblue;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Header</h2>
+            <p>When the browser's width is less than 800px, the font-size of this div is 25px. When it is 800px or wider, set the --fontsize variable value to 50px. Resize the browser window to see the effect.</p>
+
+        </div> <!-- end container -->
+    </body>
+</html>

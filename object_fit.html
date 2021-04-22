@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Object fit</title>
+
+        <style>
+            .box{
+                display: inline-block;
+                border: 1px solid #aaa;
+            }
+            .cover{
+                width: 200px;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            .contain{
+                width: 200px;
+                height: 300px;
+                object-fit: contain;
+            }
+
+            .fill{
+                width: 200px;
+                height: 300px;
+                object-fit: fill;
+            }
+            
+            .none{
+                width: 200px;
+                height: 300px;
+                object-fit: none;
+            }
+
+            .scale-down{
+                width: 200px;
+                height: 300px;
+                object-fit: scale-down;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div>
+                <div class="box">
+                    <h2>Normal image</h2>
+                    <img src="https://www.w3schools.com/css/paris.jpg" alt="paris">
+                </div>
+                
+                <div class="box">
+                    <h2>object-fit: cover</h2>
+                    <img src="https://www.w3schools.com/css/paris.jpg" alt="paris" class="cover">
+                </div>
+    
+                <div class="box">
+                    <h2>object-fit: contain</h2>
+                    <img src="https://www.w3schools.com/css/paris.jpg" alt="paris" class="contain">
+                </div>
+    
+                <div class="box">
+                    <h2>object-fit: fill</h2>
+                    <img src="https://www.w3schools.com/css/paris.jpg" alt="paris" class="fill">
+                </div>
+    
+                <div class="box">
+                    <h2>object-fit: none</h2>
+                    <img src="https://www.w3schools.com/css/paris.jpg" alt="paris" class="none">
+                </div>
+    
+                <div class="box">
+                    <h2>object-fit: <br>scale-down</h2>
+                    <img src="https://www.w3schools.com/css/paris.jpg" alt="paris" class="scale-down">
+                </div>
+            </div>
+
+            
+
+
+        </div> <!-- end container -->
+    </body>
+</html>

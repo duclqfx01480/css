@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Style Images</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            .border-radius8px{
+                border-radius: 8px;
+            }
+
+            .border-radius50pct{
+                border-radius: 50%;
+            }
+
+            .thumbnail1{
+                border: 2px solid #aaa;
+                border-radius: 5px;
+                padding: 8px;
+                width: 300px;
+                height: auto;
+            }
+
+            .thumbnail1:hover{
+                box-shadow: 0 0 10px 3px black;
+            }
+
+            /* Box */
+            .box{
+                width: 20%;
+                float: left;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            /* Image Filters */
+            .blur{
+                filter: blur(4px);
+            }
+
+            .brightness{
+                filter: brightness(250%);
+            }
+
+            .contrast{
+                filter: contrast(180%);
+            }
+
+            .grayscale{
+                filter: grayscale(100%);
+            }
+
+            .huerotate{
+                filter: hue-rotate(180deg);
+            }
+
+            .invert{
+                filter: invert(100%);
+            }
+
+            .opacity{
+                filter: opacity(50%);
+            }
+
+            .saturate{
+                filter: saturate(7);
+            }
+
+            .sepia{
+                filter: sepia(100%);
+            }
+
+            .shadow{
+                filter: drop-shadow(8px 8px 10px green);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div>
+                <img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" class="border-radius8px">
+                <img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" class="border-radius50pct">
+                <img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" class="thumbnail1">
+            </div>
+
+            <h1>Image Filters</h1>
+            <div class="filters">
+                <div class="box">
+                    <h2>Normal</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple">
+                </div>
+                
+
+                <div class="box">
+                    <h2>Blur</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple" class="blur">
+                </div>
+
+                <div class="box">
+                    <h2>Brightness</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple" class="brightness">
+                </div>
+
+                <div class="box">
+                    <h2>Contrast</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple" class="contrast">
+                </div>
+                
+                <div class="box">
+                    <h2>Grayscale</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple" class="grayscale">
+                </div>
+                
+                <div class="box">
+                    <h2>Huerotate</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple" class="huerotate">
+                </div>
+                
+                <div class="box">
+                    <h2>Invert</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple" class="invert">
+                </div>
+                
+                <div class="box">
+                    <h2>Opacity</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple" class="opacity">
+                </div>
+                
+
+                <div class="box">
+                    <h2>Saturate</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple" class="saturate">
+                </div>
+                
+                <div class="box">
+                    <h2>Sepia</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple" class="sepia">
+                </div>
+                
+                <div class="box">
+                    <h2>Shadow</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple" class="shadow">
+                </div>
+                
+                <div class="box">
+                    <h2>Normal</h2>
+                    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="pineapple">
+                </div>
+                
+            </div> <!-- end filters -->
+
+        </div> <!-- end container -->
+
+    </body>
+</html>

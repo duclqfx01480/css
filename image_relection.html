@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Image Reflection</title>
+
+        <style>
+            .border{
+                border: 1px solid #eee;
+                margin: 0 200px;
+            }
+            .reflectBelow{
+                -webkit-box-reflect: below 20px;
+            }
+
+            .reflectRight{
+                -webkit-box-reflect: right;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <img src="https://www.w3schools.com/css/img_tree.png" alt="tree" class="reflectBelow border">
+            <img src="https://www.w3schools.com/css/img_tree.png" alt="tree" class="reflectRight border">
+        </div>
+        
+    </body>
+</html>

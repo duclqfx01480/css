@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pagination</title>
+
+        <style>
+            .container{
+                width: 800px;
+                margin: auto;
+            }
+
+            .center{
+                text-align: center;
+            }
+
+            /* Pagination */
+            .pagination{
+                display: inline-block;
+            }
+
+            .pagination a{
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.2s;
+                margin: 0 4px;
+            }
+
+            .pagination a.active{
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            .pagination a:hover:not(.active){
+                background-color: #ddd;
+            }
+
+            /* BreadCrumb */
+            .breadCrumb{
+                padding: 8px 16px;
+                list-style: none;
+                background-color: #eee;
+            }
+
+            .breadCrumb li{
+                display: inline;
+            }
+
+            .breadCrumb li+li:before{
+                padding: 8px;
+                color: black;
+                content: "/\00a0";
+            }
+
+            .breadCrumb li a{
+                color: green;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="breadCrumbContainer">
+                <div class="breadCrumb">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pictures</a></li>
+                        <li><a href="#">Summer</a></li>
+                        <li>Italy</li>
+                    </ul>
+                </div>
+            </div> <!-- end breadCrumbContainer-->
+
+            <br>
+
+            <div class="paginationContainer center">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div> <!-- end paginationContainer -->
+            
+        </div> <!-- end container -->
+    </body>
+</html>

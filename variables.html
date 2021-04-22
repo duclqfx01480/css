@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Variables</title>
+
+        <style>
+            :root{
+                --blue: #1e90ff;
+                --grey: #aaa;
+                --black: #000;
+                --white: #fff;
+            }
+
+            body{
+                background-color: var(--grey);
+            }
+
+            h2{
+                border-bottom: 2px solid var(--blue);
+            }
+
+            .article{
+                color: var(--black);
+                background-color: var(--white);
+                padding: 15px;
+                margin: 10px 0;
+            }
+
+            button{
+                background-color: var(--white);
+                color: var(--blue);
+                border: 1px solid var(--blue);
+                padding: 5px;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="article">
+                <h2>Header</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+                <p>
+                    <button>Yes</button>
+                    <button>No</button>
+                </p>
+            </div> <!-- end article -->
+
+            <div class="article">
+                <h2>Header</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+                <p>
+                    <button>Yes</button>
+                    <button>No</button>
+                </p>
+            </div> <!-- end article -->
+
+            <div class="article">
+                <h2>Header</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+                <p>
+                    <button>Yes</button>
+                    <button>No</button>
+                </p>
+            </div> <!-- end article -->
+
+        </div> <!-- end container -->
+        
+
+    </body>
+</html>
