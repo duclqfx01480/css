@@ -12,7 +12,7 @@
 
             [class*="col-"]{
                 float: left;
-                padding: 15px;
+                padding: 1em;
             }
 
             .border{
@@ -144,17 +144,23 @@
                 padding: 20px;
             }
 
+            .box{
+                position: relative;
+            }
+
             .box img{
-                padding: 5px;
                 width: 100%;
                 height: auto;
 
             }
 
-            .box::after{
-                content: "";
-                clear: both;
-                display: table;
+            .box h3{
+                background-color: black;
+                color: white;
+                padding: 0.5em;
+                position: absolute;
+                top: -0.15em;
+                left: 0.85em;
             }
 
             /* Footer */
