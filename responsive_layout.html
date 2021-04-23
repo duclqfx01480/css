@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive - Viewport</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                font-family: sans-serif;
+            }
+
+            .header{
+                background-color: #ddd;
+                color: #73AD21;
+                padding: 15px;   
+            }
+
+            .menu ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu ul li{
+                margin-bottom: 7px; 
+            }
+
+            .menu ul li a{
+                display: inline-block;
+                width: 100%;
+                padding: 10px;
+                text-decoration: none;
+                background-color: #73AD21;
+                color: #fff;
+            }
+
+            .menu ul li a:hover{
+                background-color: #222;
+            }
+
+            .row::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+            video{
+                width: 100%;
+                height: auto;
+            }
+
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+            }
+
+            .aside{
+                background-color: #33b5e5;
+                padding: 15px;
+                color: #fff;
+                text-align: center;
+                font-size: 14px;
+                box-shadow: 1px 1px 10px black;
+            }
+
+            .footer{
+                background-color: #0099cc;;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+                padding: 15px;
+            }
+
+            /* For Mobile (Mobile-first) */
+            [class*="col-"]{
+                width: 100%;
+            }
+
+            /* For Tablets */
+            @media only screen and (min-width: 600px){
+                .col-s-1{width: 8.33%;}
+                .col-s-2{width: 16.66%;}
+                .col-s-3{width: 25%;}
+                .col-s-4{width: 33.33%;}
+                .col-s-5{width: 41.66%;}
+                .col-s-6{width: 50%;}
+                .col-s-7{width: 58.33%;}
+                .col-s-8{width: 66.66%;}
+                .col-s-9{width: 75%;}
+                .col-s-10{width: 83.33%;}
+                .col-s-11{width: 91.66%;}
+                .col-s-12{width: 100%;}
+            }
+
+            /* For Desktop */
+            @media only screen and (min-width: 768px){
+                .col-1{width: 8.33%;}
+                .col-2{width: 16.66%;}
+                .col-3{width: 25%;}
+                .col-4{width: 33.33%;}
+                .col-5{width: 41.66%;}
+                .col-6{width: 50%;}
+                .col-7{width: 58.33%;}
+                .col-8{width: 66.66%;}
+                .col-9{width: 75%;}
+                .col-10{width: 83.33%;}
+                .col-11{width: 91.66%;}
+                .col-12{width: 100%;}
+            }
+
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Header</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-2 col-s-3 menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-7 col-s-9 main">
+                    <h1>Main content</h1>
+                    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+                    <img src="https://www.w3schools.com/css/img_chania.jpg" alt="chania" width="460" height="345">
+                    <video width="400" controls>
+                        <source src="https://www.w3schools.com/css/mov_bbb.mp4" type="video/mp4">
+                        <source src="https://www.w3schools.com/css/mov_bbb.oog" type="video/oog">
+                        Your browser does not support HTML5 video
+                    </video>
+                </div>
+
+                <div class="col-3 col-s-12 right">
+                    <div class="aside">
+                        <h2>Aside</h2>
+                        <h2>What?</h2>
+                        <p>Chania is a city on the island of Crete.</p>
+                        <h2>Where?</h2>
+                        <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                        <h2>How?</h2>
+                        <p>You can reach Chania airport from all over Europe.</p>
+                    </div> <!-- end aside -->
+                </div> <!-- end col-3 right -->
+
+            </div> <!-- end row-->
+
+            <div class="row footer">
+                <h1>Footer</h1>
+                <p>Resize the browser window to see how the content respond to the resizing.</p>
+            </div>
+
+        </div> <!-- end container -->
+    </body>
+</html>

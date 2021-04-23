@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini Project- Layout web</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+            }
+
+            .border{
+                border: 1px solid #aaa;
+            }
+
+            /* For Mobile (Mobile-first) */
+            [class*="col-"]{
+                width: 100%;
+            }
+
+            /* For Tablets */
+            @media only screen and (min-width: 600px){
+                .col-s-1{width: 8.33%;}
+                .col-s-2{width: 16.66%;}
+                .col-s-3{width: 25%;}
+                .col-s-4{width: 33.33%;}
+                .col-s-5{width: 41.66%;}
+                .col-s-6{width: 50%;}
+                .col-s-7{width: 58.33%;}
+                .col-s-8{width: 66.66%;}
+                .col-s-9{width: 75%;}
+                .col-s-10{width: 83.33%;}
+                .col-s-11{width: 91.66%;}
+                .col-s-12{width: 100%;}
+            }
+
+            /* For Desktop */
+            @media only screen and (min-width: 768px){
+                .col-1{width: 8.33%;}
+                .col-2{width: 16.66%;}
+                .col-3{width: 25%;}
+                .col-4{width: 33.33%;}
+                .col-5{width: 41.66%;}
+                .col-6{width: 50%;}
+                .col-7{width: 58.33%;}
+                .col-8{width: 66.66%;}
+                .col-9{width: 75%;}
+                .col-10{width: 83.33%;}
+                .col-11{width: 91.66%;}
+                .col-12{width: 100%;}
+            }
+
+            /* End Responsive */
+
+            body{
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .row{
+                width: 100%;
+            }
+
+            .row::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            /* Header */
+            .logo{
+                width: auto;
+                height: 30px;
+                margin: 10px;
+            }
+
+            /* Menu */
+            .menu{
+                list-style-type: none;
+                background-color: #555;
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+
+
+            .menu li{
+                float: left;
+            }
+
+            .menu li a{
+                text-decoration: none;
+                display: inline-block;
+                padding: 14px 16px;
+                color: white;
+            }
+
+            .menu li a:hover:not(.active){
+                background-color: #111;
+            }
+
+            .menu li a.active{
+                background-color: #C70039;
+            }
+            
+
+            /* Aside */
+
+            /* About */
+            .about{
+                text-align: center;
+                background-color: #eee;
+                padding: 5%;
+            }
+            #about{
+            }
+
+            .greyButton{
+                background-color: grey;
+                text-decoration: none;
+                color: white;
+                display: inline-block;
+                padding: 10px 20px;
+            }
+
+            /* Project */
+
+            .sectionTitle{
+                font-size: 24px;
+                border-bottom: 1px solid #ddd;
+                padding: 20px;
+            }
+
+            .box img{
+                padding: 5px;
+                width: 100%;
+                height: auto;
+
+            }
+
+            .box::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            /* Footer */
+            .footer{
+                background-color: black;
+            }
+
+            .bottomMenu{
+                list-style-type: none;
+            }
+
+            .bottomMenu li::before{
+                content: ">";
+                color: #999;
+            }
+
+            .bottomMenu li a{
+                text-decoration: none;
+                color: #999;
+                display: inline-block;
+                padding: 8px;
+                font-size: 0.8em;
+            }
+
+            .bottomMenu li a:hover{
+                color: #555;
+            }
+
+            .copyright{
+                color: #aaa;
+                text-align: center;
+                border-top: 1px solid #555;
+                padding: 20px 0;
+                font-size: 0.9em;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row header">
+                <a href="#"><img src="https://www.takeuchi-const.co.jp/images/common/logo_en.svg" alt="takeuchi-const" class="logo"></a>
+            </div>
+
+            <div class="row menubar">
+                <ul class="menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div> <!-- end row (menubar) -->
+
+            <div class="row main">
+                <div class="about">
+                    <h1>About Takeuchi Construction Inc.</h1>
+                    <p id="about">Takeuchi Construction has been constantly developing new innovative technologies since its establishment in 1990,
+                        and have created the FOUNDATION for the next generation.
+                        While preserving technologies developed from various challenges as intellectual property,
+                        we are aiming to be the unique,
+                        leading company in the industry as an innovative group pursuing reform based on the knowledge and skills we have cultivated up to now.
+                    </p>
+                    <a href="https://www.takeuchi-const.co.jp/en/company/" target="_blank" class="greyButton">See company profile</a>
+                </div>
+            </div> <!-- end row (main content)-->
+
+            <div class="row technology">
+                <div class="col-12">
+                    <div class="row sectionTitle">Projects</div>
+                </div>
+                
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-3 box">
+                            <h3>Summer House</h3>
+                            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="summer house">
+                        </div>
+    
+                        <div class="col-3 box">
+                            <h3>Brick House</h3>
+                            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="brick house">
+                        </div>
+    
+                        <div class="col-3 box">
+                            <h3>Renovated</h3>
+                            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="renovated">
+                        </div>
+    
+                        <div class="col-3 box">
+                            <h3>Barn House</h3>
+                            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="barn house">
+                        </div>
+
+                        <div class="col-3 box">
+                            <h3>Summer House</h3>
+                            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="summer house">
+                        </div>
+    
+                        <div class="col-3 box">
+                            <h3>Brick House</h3>
+                            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="brick house">
+                        </div>
+    
+                        <div class="col-3 box">
+                            <h3>Renovated</h3>
+                            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="renovated">
+                        </div>
+    
+                        <div class="col-3 box">
+                            <h3>Barn House</h3>
+                            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="barn house">
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="row footer">
+                <div class="col-12">
+                    <div class="row">
+                        <ul class="bottomMenu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">TNF Construction Method</a></li>
+                            <li><a href="#">T-BAGS Seismic Base Isolation Method</a></li>
+                            <li><a href="#">Company Profile</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="row copyright">
+                        Copyright © Takeuchi Construction Inc. All rights reserved.
+                    </div>
+                </div>
+
+            </div> <!-- end row (footer) -->
+            
+        </div> <!-- end container -->
+    </body>
+</html>

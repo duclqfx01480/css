@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - Different Breakpoints</title>
+    <style>
+        .info {
+        padding: 20px;
+        color: white;
+        }
+
+        .screen{
+            display: block;
+            text-align: center;
+        }
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .info {background: red;}
+
+            #extrasmall{display: block;}
+            #small{display: none;}
+            #medium{display: none;}
+            #large{display: none;}
+            #extralarge{display: none;}
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .info {background: green;}
+            #extrasmall{display: none;}
+            #small{display: block;}
+            #medium{display: none;}
+            #large{display: none;}
+            #extralarge{display: none;}
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .info {background: blue;}
+
+            #extrasmall{display: none;}
+            #small{display: none;}
+            #medium{display: block;}
+            #large{display: none;}
+            #extralarge{display: none;}
+        } 
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .info {background: orange;}
+
+            #extrasmall{display: none;}
+            #small{display: none;}
+            #medium{display: none;}
+            #large{display: block;}
+            #extralarge{display: none;}
+        } 
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .info {background: pink;}
+
+            #extrasmall{display: none;}
+            #small{display: none;}
+            #medium{display: none;}
+            #large{display: none;}
+            #extralarge{display: block;}
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h2>Typical Media Query Breakpoints</h2>
+    <p class="info">Resize the browser window to see how the background color of this paragraph changes on different screen sizes.</p>
+
+    <h2 class="screen" id="extrasmall">Extra Small Screen</h2>
+    <h2 class="screen" id="small">Small Screen</h2>
+    <h2 class="screen" id="medium">Medium Screen</h2>
+    <h2 class="screen" id="large">Large Screen</h2>
+    <h2 class="screen" id="extralarge">Extra Large Screen</h2>
+
+</body>
+</html>
